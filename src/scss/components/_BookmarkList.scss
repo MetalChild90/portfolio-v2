@@ -1,0 +1,7 @@
+.Bookmarks-wrapper {
+  display: flex;
+
+  &:nth-child(1) {
+    border-left: 3px solid $black;
+  }
+}

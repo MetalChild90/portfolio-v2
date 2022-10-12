@@ -1,0 +1,35 @@
+.Home {
+  display: flex;
+  & .title {
+    align-self: flex-start;
+    font-size: 20px;
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      margin-bottom: $super-small;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: $big;
+      font-size: 35px;
+    }
+
+    @media (min-width: 992px) {
+      margin-bottom: $medium;
+      margin-top: $medium;
+    }
+  }
+  & .text {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: $small;
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      margin-top: $super-small;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.Footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: $super-small;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  background-color: $very-dark-turquiose;
+  color: $white;
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
+}

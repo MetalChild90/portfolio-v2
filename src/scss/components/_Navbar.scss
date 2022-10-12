@@ -1,0 +1,38 @@
+.Navbar {
+  display: flex;
+  height: 100vh;
+  background-color: $dark-turquiose;
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Navbar-link {
+    display: block;
+    padding: $super-small;
+    font-size: 30px;
+    color: $white;
+    transition: $transition-duration-short;
+    cursor: pointer;
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      padding: $super-small;
+      font-size: 30px;
+    }
+
+    @media (min-width: 768px) {
+      padding: $normal;
+      font-size: 40px;
+    }
+
+    &.active {
+      background-color: $turquoise;
+    }
+
+    &:hover {
+      background-color: $turquoise;
+    }
+  }
+}

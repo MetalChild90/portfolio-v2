@@ -1,0 +1,26 @@
+.Bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 100vh;
+  background-color: $dark-turquiose;
+  color: $white;
+  transition: $transition-duration-long ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    width: 50px;
+  }
+
+  & .text {
+    min-width: 400px;
+    text-align: center;
+    transform: rotate(-90deg);
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+    }
+  }
+}

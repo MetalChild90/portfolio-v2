@@ -1,0 +1,92 @@
+.Contact {
+  text-align: center;
+  font-size: 15px;
+
+  & .title {
+    margin-bottom: $medium;
+    // line-height: 2;
+
+    // @media (min-width: 576px) and (orientation: landscape) {
+    //   font-size: 23px;
+    // }
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      margin-bottom: $small;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: $big;
+      font-size: 35px;
+    }
+  }
+
+  & .text {
+    margin: $small 0;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 25px;
+    }
+
+    & ul {
+      margin-top: $big;
+      list-style: none;
+      text-align: left;
+
+      // @media (min-width: 576px) and (orientation: landscape) {
+      //   margin-top: $big;
+      //   margin-bottom: $big;
+      // }
+
+      @media (max-width: 768px) and (orientation: landscape) {
+        margin-top: $normal;
+      }
+    }
+
+    li {
+      margin-top: $small;
+      font-size: 12px;
+
+      @media (min-width: 576px) and (orientation: landscape) {
+        font-size: 17px;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 25px;
+      }
+
+      a {
+        text-decoration: none;
+        margin: 0;
+      }
+    }
+  }
+
+  & .item {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  & .goodbye {
+    margin-top: $big;
+
+    @media (min-width: 576px) and (orientation: landscape) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) and (orientation: landscape) {
+      font-size: 18px;
+      margin-top: $small;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+    }
+  }
+}

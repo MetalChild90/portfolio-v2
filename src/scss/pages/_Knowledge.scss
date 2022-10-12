@@ -1,0 +1,14 @@
+.Knowledge ul {
+  width: 70%;
+  height: auto;
+  list-style: none;
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90vw;
+    height: 50vh;
+  }
+}
