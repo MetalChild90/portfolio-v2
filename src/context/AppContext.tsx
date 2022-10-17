@@ -48,7 +48,7 @@ export const Provider = ({ children }: ProviderProps) => {
       title: "Paradise Beach",
       image: beachImage,
       website: "https://starlit-lolly-81b612.netlify.app",
-      github: "https://github.com/MetalChild90/paradise-beach-v2",
+      github: "https://github.com/MetalChild90/paradise-beach-v3",
       bookmarkMoved: false,
     },
     {
@@ -56,7 +56,7 @@ export const Provider = ({ children }: ProviderProps) => {
       title: "Crypto Tracker",
       image: trackerImage,
       website: "https://reliable-seahorse-7150b7.netlify.app",
-      github: "https://github.com/MetalChild90/crypto-tracker-v3",
+      github: "https://github.com/MetalChild90/tracker-v4",
       bookmarkMoved: false,
     },
     {
@@ -64,7 +64,7 @@ export const Provider = ({ children }: ProviderProps) => {
       title: "Anime Character Rating",
       image: ratingImage,
       website: "https://gentle-klepon-526607.netlify.app",
-      github: "https://github.com/MetalChild90/anime-character-review",
+      github: "https://github.com/MetalChild90/anime-character-rating-v2",
       bookmarkMoved: false,
     },
   ]);

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: $super-small $small;
-  margin-top: $small;
+  margin-top: $super-small;
   color: $black;
   border-radius: $radius-small;
   text-align: center;
@@ -14,7 +14,7 @@
 
   @media (min-width: 768px) {
     margin: $small;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   @media (min-width: 1200px) {
@@ -23,5 +23,6 @@
       2px 0px 0 $text-outline-color, 0px 2px 0 $text-outline-color,
       -2px 0px 0 $text-outline-color, 0px -2px 0 $text-outline-color;
     color: $grey;
+    font-size: 40px;
   }
 }

@@ -1,5 +1,5 @@
 .Knowledge ul {
-  width: 70%;
+  width: 100%;
   height: auto;
   list-style: none;
 
@@ -10,5 +10,9 @@
     align-items: center;
     width: 90vw;
     height: 50vh;
+  }
+
+  @media (min-width: 992px) {
+    width: 70%;
   }
 }

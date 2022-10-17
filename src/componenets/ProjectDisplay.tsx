@@ -1,10 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import AppContext from "../context/AppContext";
 import ProjectContent from "./ProjectContent";
 
 function ProjectDisplay() {
-  const { activeBookmark, contentWidth, bookmarkWidth } =
+  const { activeBookmark, setActiveBookmark, contentWidth, bookmarkWidth } =
     useContext(AppContext);
+
+  useEffect(() => {
+    return () => {
+      setActiveBookmark(null);
+    };
+  }, [setActiveBookmark]);
 
   if (activeBookmark === null) {
     return null;

@@ -4,14 +4,9 @@
 
   & .title {
     margin-bottom: $medium;
-    // line-height: 2;
-
-    // @media (min-width: 576px) and (orientation: landscape) {
-    //   font-size: 23px;
-    // }
 
     @media (max-width: 768px) and (orientation: landscape) {
-      margin-bottom: $small;
+      margin-bottom: $super-small;
     }
 
     @media (min-width: 768px) {
@@ -36,11 +31,6 @@
       list-style: none;
       text-align: left;
 
-      // @media (min-width: 576px) and (orientation: landscape) {
-      //   margin-top: $big;
-      //   margin-bottom: $big;
-      // }
-
       @media (max-width: 768px) and (orientation: landscape) {
         margin-top: $normal;
       }
@@ -55,12 +45,8 @@
       }
 
       @media (min-width: 768px) {
+        margin-top: $normal;
         font-size: 25px;
-      }
-
-      a {
-        text-decoration: none;
-        margin: 0;
       }
     }
   }
