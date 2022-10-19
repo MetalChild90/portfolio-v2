@@ -23,8 +23,8 @@ type AppContextObject = {
   bookmarkWidth: number;
   setBookmarkWidth: (width: number) => void;
   setProjectsWidth: (width: number) => void;
-  activeBookmark: number | null;
-  setActiveBookmark: (id: number | null) => void;
+  activeBookmark: number;
+  setActiveBookmark: (id: number) => void;
 };
 
 const AppContext = createContext<AppContextObject>({
@@ -34,17 +34,17 @@ const AppContext = createContext<AppContextObject>({
   setBookmarkWidth: (width: number) => {},
   setProjectsWidth: (width: number) => {},
   activeBookmark: 0,
-  setActiveBookmark: (id: number | null) => {},
+  setActiveBookmark: (id: number) => {},
 });
 
 export const Provider = ({ children }: ProviderProps) => {
   const [projectsWidth, setProjectsWidth] = useState(0);
   const [bookmarkWidth, setBookmarkWidth] = useState(0);
   const [contentWidth, setContentWidth] = useState(0);
-  const [activeBookmark, setActiveBookmark] = useState<number | null>(null);
+  const [activeBookmark, setActiveBookmark] = useState<number>(0);
   const [projects, setProjects] = useState([
     {
-      id: 0,
+      id: 1,
       title: "Paradise Beach",
       image: beachImage,
       website: "https://starlit-lolly-81b612.netlify.app",
@@ -52,7 +52,7 @@ export const Provider = ({ children }: ProviderProps) => {
       bookmarkMoved: false,
     },
     {
-      id: 1,
+      id: 2,
       title: "Crypto Tracker",
       image: trackerImage,
       website: "https://chic-lollipop-1246d0.netlify.app/",
@@ -60,7 +60,7 @@ export const Provider = ({ children }: ProviderProps) => {
       bookmarkMoved: false,
     },
     {
-      id: 2,
+      id: 3,
       title: "Anime Character Rating",
       image: ratingImage,
       website: "https://startling-sorbet-ab76a8.netlify.app/",

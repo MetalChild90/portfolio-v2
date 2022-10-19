@@ -8,23 +8,19 @@ function ProjectDisplay() {
 
   useEffect(() => {
     return () => {
-      setActiveBookmark(null);
+      setActiveBookmark(0);
     };
   }, [setActiveBookmark]);
 
-  if (activeBookmark === null) {
-    return null;
-  }
-
   return (
     <div
-      className="Project-detail inner-wrapper"
+      className="Project-detail"
       style={{
         width: `${contentWidth}px`,
         marginLeft: `${
-          activeBookmark === 0
+          activeBookmark === 1
             ? 0
-            : activeBookmark === 1
+            : activeBookmark === 2
             ? bookmarkWidth
             : bookmarkWidth * 2
         }px`,

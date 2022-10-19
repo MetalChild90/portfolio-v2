@@ -33,8 +33,8 @@ function Bookmark({ id, title, bookmarkMoved }: BookmarkProps) {
   }, [setBookmarkWidth]);
 
   const handleClick = () => {
-    if (activeBookmark === 2 && id === 2) {
-      setActiveBookmark(null);
+    if (activeBookmark === 3 && id === 3) {
+      setActiveBookmark(0);
     } else {
       setActiveBookmark(id);
     }
